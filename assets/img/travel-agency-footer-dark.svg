@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2160 100">
+  <!-- Background -->
+  <rect width="2160" height="100" fill="#1a1a2e"/>
+  
+  <!-- Sand -->
+  <path d="M0 70 Q540 60 1080 70 Q1620 80 2160 70 L2160 100 L0 100 Z" fill="#2a2a4a"/>
+  
+  <!-- Surfboard Silhouette -->
+  <path d="M1900 30 Q1920 25 1940 30 L1950 80 Q1930 85 1910 80 Z" fill="#0f3460"/>
+  
+  <!-- Wave -->
+  <path d="M100 50 Q300 20 500 50 Q700 80 900 50" fill="none" stroke="#4a4e69" stroke-width="5"/>
+  
+  <!-- Stars -->
+  <circle cx="300" cy="30" r="1" fill="#ffffff"/>
+  <circle cx="700" cy="20" r="1" fill="#ffffff"/>
+  <circle cx="1100" cy="40" r="1" fill="#ffffff"/>
+  <circle cx="1500" cy="25" r="1" fill="#ffffff"/>
+  <circle cx="1900" cy="35" r="1" fill="#ffffff"/>
+</svg>

@@ -6,7 +6,7 @@
     <title>Vitor's Portfolio - Flex Design</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  
+
   <body class="adaptive">
   <!-- <body> -->
     <header id="header">
@@ -23,9 +23,61 @@
     </header>
 
     <main>
-      
+      <form action="#">
+          <legend>Ask us anything</legend>
+          <div>
+            <label for="name">Name: </label><br />
+            <span class="required">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                size="27"
+                autofocus
+                required
+              />
+            </span>
+          </div>
+          <div>
+          </div>
+          <div>
+            <label for="email">E-mail: </label><br />
+            <span class="optional">
+              <input id="email" name="email" type="email" size="27" />
+            </span>
+          </div>
+          <div>
+            <label for="message">Your message:</label><br />
+            <span class="required">
+              <textarea id="message" required>
+              </textarea>
+            </span>
+          </div>
+          <div>
+            <label for="cars">I'm interested in</label>
+            <select name="cars" id="cars">
+              <option value="">choose below</option>
+              <option value="optionsmall">Small car</option>
+              <option value="optionmedium">Medium car</option>
+              <option value="optionsuv">SUV</option>
+              <option value="optionvan">Van</option>
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="submit">Submit</button>
+            <!--Extra reset button, enjoy!-->
+            <button type="reset">Reset</button>
+          </div>
+      </form>
     </main>
 
-    <footer id="footer">footer</footer>
+    <footer id="footer">
+      <address class="address">
+        Splash Wave does not exist!<br>
+        If it did, you could call us on <a href="tel:+1 123 456 789">+1 123 456 789</a><br>
+        <a href="mailto:178353419+while-maybe@users.noreply.github.com">E-mail</a> your order in advance!
+      </address>
+      <p class="designer">V designs 2024</p>
+    </footer>
   </body>
 </html>

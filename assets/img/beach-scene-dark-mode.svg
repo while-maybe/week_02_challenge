@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2160 400">
+  <!-- Night Sky -->
+  <rect width="2160" height="400" fill="#1a1a2e"/>
+  
+  <!-- Stars -->
+  <circle cx="200" cy="50" r="2" fill="#ffffff"/>
+  <circle cx="600" cy="100" r="1" fill="#ffffff"/>
+  <circle cx="1000" cy="30" r="1.5" fill="#ffffff"/>
+  <circle cx="1400" cy="80" r="1" fill="#ffffff"/>
+  <circle cx="1800" cy="60" r="2" fill="#ffffff"/>
+  <circle cx="2100" cy="120" r="1" fill="#ffffff"/>
+  
+  <!-- Moon -->
+  <path d="M1960 20 A 60 60 0 0 1 1960 140 A 60 60 0 0 0 1960 20" fill="#f0f0f0"/>
+  
+  <!-- Ocean -->
+  <path d="M0 200 Q540 180 1080 200 Q1620 220 2160 200 L2160 400 L0 400 Z" fill="#16213e"/>
+  <path d="M0 220 Q540 200 1080 220 Q1620 240 2160 220 L2160 400 L0 400 Z" fill="#0f3460" opacity="0.6"/>
+  
+  <!-- Beach -->
+  <path d="M0 250 Q540 230 1080 250 Q1620 270 2160 250 L2160 400 L0 400 Z" fill="#2a2a4a"/>
+  
+  <!-- Palm Tree 1 -->
+  <path d="M300 250 L300 150 Q270 140 250 150 Q300 50 350 150 Q330 140 300 150" fill="#0f3460"/>
+  
+  <!-- Palm Tree 2 -->
+  <path d="M1800 270 L1800 170 Q1770 160 1750 170 Q1800 70 1850 170 Q1830 160 1800 170" fill="#0f3460"/>
+  
+  <!-- Reflection on water -->
+  <path d="M1900 200 L2020 200 L1960 400 Z" fill="#f0f0f0" opacity="0.1"/>
+</svg>

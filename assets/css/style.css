@@ -4,38 +4,52 @@
   --hover-color: ;
   --text-color: #0D2330;
 
-  --def-radius: 4px;
   --def-hor-margin: 10px;
   --def-vert-margin: 20px;
-
-  --def-banner-height: 7vh;
-
+  
+  --def-banner-height: 85px;
+  
   --def-a-text-size: 1.2rem;
   --def-a-border: 1px solid #c8bcc758;
-  --def-a-background: #c8bcc79b;
-}
+  --def-a-background: #c8bcc7be;
+  
+  --bg-banner-color: #87CEEB;
+  --bg-footer-color: #4F93D7;
+  
+  --bg-header: url("../img/travel-agency-header.svg");
+  --bg-footer: url("../img/travel-agency-footer.svg");
+  --bg-banner: url("../img/beach-scene.svg");
+  
+  --def-radius: 4px;
+  --def-shadow: 5px 5px 10px -4px #4F93D7;
 
+}
+/* 
 @media (prefers-color-scheme: dark) {
   .adaptive {
     --text-color: #BFDBED;
     --primary-color: #1B1B1B;
     --secondary-color: #5d69ea34;
-
+    
     --def-a-border: 1px solid #c8bcc72a;
     --def-a-background: #c8bcc725;
 
-    /* --inputs-bg-color: #5d69ea0e; */
-  
-    /* --hover-text-color: #CDCDCD;
-    --hover-bg-color: #c1666a3f; */
-
+    --bg-banner-color: #1B1B1B;
+    --bg-banner-color: #1B1B1B;
+    --bg-footer-color: #1B1B1B;
+    
+    --bg-header: url("../img/travel-agency-header-dark.svg");
+    --bg-footer: url("../img/travel-agency-footer-dark.svg");
+    --bg-banner: url("../img/beach-scene-dark-mode.svg");
   }
-}
+} */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  /* border: 2px solid black; */
 
 }
 
@@ -50,6 +64,12 @@ body {
   color: var(--text-color);
   background-color: var(--primary-color);
   height: 100vh;
+
+  background-image: url("../img/beach-pattern.svg");
+}
+
+img {
+  max-width: 100%;
 }
 
 #header, #footer {
@@ -57,11 +77,19 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   height: var(--def-banner-height);
-  padding: var(--def-vert-margin);
+  /* padding: var(--def-vert-margin); */
 
   font-size: var(--def-a-text-size);
+}
+
+#header {
+  background-image: var(--bg-header);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  
 }
 
 #header img {
@@ -71,10 +99,10 @@ body {
 }
 
 .login-button {
-  margin: 0 var(--def-side-margin);
+  margin-right: var(--def-hor-margin);
 }
 
-a {
+a, button {
   padding: 3px 10px;
   margin: 0 5px;
   color: var(--text-color);
@@ -94,8 +122,6 @@ main {
   margin: var(--def-vert-margin) 0;
   gap: var(--def-vert-margin);
 
-  
-
 }
 
 #banner,
@@ -108,10 +134,19 @@ main {
   background-color: var(--secondary-color);
 }
 
+#banner {
+  background-image: var(--bg-banner);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-color: var(--bg-banner-color);
+}
+
 #boxes {
   display: flex;
   flex: 1;
   gap: var(--def-hor-margin);
+  
 }
 
 .box1,
@@ -127,7 +162,116 @@ main {
   background-color: var(--secondary-color);
 }
 
-
 #footer {
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--bg-footer-color);
+
+  background-image: var(--bg-footer);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.address {
+  margin: 0 0 5px 20px;
+  font-weight: 550;
+  
+}
+
+.address a {
+  margin:0;
+  padding: 0;
+}
+
+.designer {
+  margin-right: var(--def-hor-margin);
+  font-weight: 800;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  /* max-width: 500px; */
+}
+
+legend {
+  margin: auto;
+}
+
+input, label {
+  margin: 0 0 var(--def-vert-margin) 0;
+  font-size: var(--def-a-text-size);
+}
+
+input{
+  background-color: var(--primary-color);
+  padding: 3px 10px;
+  height: 40px;
+}
+
+form button, select {
+  border-radius: var(--def-radius);
+  font-size: var(--def-a-text-size);
+  background-color: var(--def-a-background);
+  margin: 0 0 var(--def-vert-margin) 0;
+}
+
+select {
+  padding: 3px 10px;
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+textarea {
+  flex: 1;
+  border: 2px solid black;
+  font-size: var(--def-a-text-size);
+  background-color: var(--primary-color);
+  align-items: center;
+  margin-bottom: var(--def-vert-margin);
+}
+
+/* box shadows */
+form button,
+input,
+a,
+textarea {
+  border-radius: var(--def-radius);
+  box-shadow: var(--def-shadow);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: white;
+}
+
+.required::after,
+.optional::after {
+  color: var(--primary-color);
+  background-color: var(--bg-footer-color);
+  border-radius: var(--def-radius);
+
+  padding: 2px 5px;
+  margin-left: 5px;
+  font-size: 0.5em;
+  font-weight: 600;
+}
+
+/* adds content - a small text box if the elements contains class required */
+.required::after {
+  content: "REQUIRED";
+}
+
+/* adds content - a small text box if the elements contains class optional */
+.optional::after {
+  content: "OPTIONAL";
 }
