@@ -266,7 +266,7 @@ form {
   display: flex;
   flex-direction: column;
 
-  max-width: 600px;
+  max-width: 720px;
   
 }
 
@@ -274,13 +274,16 @@ legend {
   margin: auto;
 }
 
-input, textarea {
-  min-width: 500px;
+input,
+textarea {
+  min-width: 80%;
+  padding: var(--def-input-padding);
 }
 
-input, label {
-  margin: 0 0 var(--def-vert-margin) 0;
+input,
+label {
   font-size: var(--def-a-text-size);
+  margin: 0 0 var(--def-vert-margin) 0;
 }
 
 input {
