@@ -8,7 +8,7 @@
   </head>
 
   <body class="adaptive">
-  <!-- <body> -->
+    <!-- <body> -->
     <header id="header">
       <img src="./assets/img/splashwave-logo-svg.svg" alt="logo" />
       <nav>
@@ -24,9 +24,10 @@
 
     <main>
       <section id="banner">
-      <h1>Come travel with SplashWave</h1>
-    </section>
-      <form action="#">
+        <h1>Come travel with SplashWave</h1>
+      </section>
+
+        <form class="form" action="#">
           <legend>Ask us anything</legend>
           <div>
             <label for="name">Name: </label><br />
@@ -42,8 +43,6 @@
             </span>
           </div>
           <div>
-          </div>
-          <div>
             <label for="email">E-mail: </label><br />
             <span class="optional">
               <input id="email" name="email" type="email" size="27" />
@@ -51,19 +50,17 @@
           </div>
           <div>
             <label for="message">Your message:</label><br />
-            <span class="required">
-              <textarea id="message" required>
-              </textarea>
+            <span class="required required-text-area">
+              <textarea id="message" class="message" name="message" required></textarea>
             </span>
           </div>
           <div>
-            <label for="cars">I'm interested in</label>
-            <select name="cars" id="cars">
+            <label for="services">I'm interested in</label>
+            <select name="services" id="cars">
               <option value="">choose below</option>
-              <option value="optionsmall">Small car</option>
-              <option value="optionmedium">Medium car</option>
-              <option value="optionsuv">SUV</option>
-              <option value="optionvan">Van</option>
+              <option value="barefoot">“Barefoot Luxury”</option>
+              <option value="snorkel">“Snorkel & Snack”</option>
+              <option value="hopping">“Island-Hopping"</option>
             </select>
           </div>
           <div class="buttons">
@@ -71,14 +68,18 @@
             <!--Extra reset button, enjoy!-->
             <button type="reset">Reset</button>
           </div>
-      </form>
+        </form>
     </main>
 
     <footer id="footer">
       <address class="address">
-        Splash Wave does not exist!<br>
-        If it did, you could call us on <a href="tel:+1 123 456 789">+1 123 456 789</a><br>
-        <a href="mailto:178353419+while-maybe@users.noreply.github.com">E-mail</a> your order in advance!
+        Splash Wave does not exist!<br />
+        If it did, you could call us on
+        <a href="tel:+1 123 456 789">+1 123 456 789</a><br />
+        <a href="mailto:178353419+while-maybe@users.noreply.github.com"
+          >E-mail</a
+        >
+        your order in advance!
       </address>
       <p class="designer">V designs 2024</p>
     </footer>

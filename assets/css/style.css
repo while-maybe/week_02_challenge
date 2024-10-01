@@ -1,7 +1,7 @@
 :root {
   --primary-color: #bfdbedbb;
   --secondary-color: #c8bcc758;
-  --hover-color: ;
+  --hover-color: #4F93D7;
   --text-color: #0D222F;
 
   --def-hor-margin: 10px;
@@ -25,6 +25,8 @@
   
   --def-radius: 4px;
   --def-shadow: 5px 5px 5px -4px #4F93D7;
+
+  --def-input-padding: 3px 10px;
 
 }
 /* 
@@ -202,11 +204,6 @@ h2 {
   /* align-items: center; */
 }
 
-/* .news {
-  display: flex;
-  flex-direction: column;  
-} */
-
 .news-items {
   display: flex;
   flex-wrap: wrap;
@@ -256,15 +253,25 @@ article p::first-letter,
   font-weight: 800;
 }
 
+/* contact us */
+
 form {
+  align-self: center;
+  justify-self: center;
+
   display: flex;
   flex-direction: column;
-  margin: 100px auto;
-  /* max-width: 500px; */
 }
 
 legend {
   margin: auto;
+}
+
+input, textarea {
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 50px;
+  padding: var(--def-input-padding);
 }
 
 input, label {
@@ -274,20 +281,27 @@ input, label {
 
 input {
   background-color: var(--primary-color);
-  padding: 3px 10px;
   height: 40px;
 }
 
 form button, select {
   border-radius: var(--def-radius);
   font-size: var(--def-a-text-size);
+  margin: var(--def-vert-margin) 0;
   background-color: var(--def-a-background);
-  margin: 0 0 var(--def-vert-margin) 0;
 }
 
 select {
-  padding: 3px 10px;
+  padding: var(--def-input-padding);
+}
 
+textarea {
+  font-size: var(--def-a-text-size);
+  background-color: var(--primary-color);
+  min-height: 200px;
+  overflow: hidden;
+
+  position: relative;
 }
 
 .buttons {
@@ -297,16 +311,6 @@ select {
   justify-content: space-between;
 }
 
-textarea {
-  flex: 1;
-  border: 2px solid black;
-  font-size: var(--def-a-text-size);
-  background-color: var(--primary-color);
-  align-items: center;
-  margin-bottom: var(--def-vert-margin);
-}
-
-/* box shadows */
 form button,
 input,
 a,
@@ -333,6 +337,11 @@ textarea:focus {
   font-weight: 600;
 }
 
+.required-text-area::after {
+  position: relative;
+  bottom:100px;
+}
+
 /* adds content - a small text box if the elements contains class required */
 .required::after {
   content: "REQUIRED";
@@ -341,4 +350,10 @@ textarea:focus {
 /* adds content - a small text box if the elements contains class optional */
 .optional::after {
   content: "OPTIONAL";
+}
+
+/*  */
+a:hover,
+button:hover {
+  background-color: var(--hover-color);
 }
