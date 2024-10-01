@@ -29,6 +29,7 @@
   --def-input-padding: 3px 10px;
 
 }
+
 /* 
 @media (prefers-color-scheme: dark) {
   .adaptive {
@@ -254,13 +255,16 @@ article p::first-letter,
 }
 
 /* contact us */
-
 form {
+  margin: auto;
   align-self: center;
   justify-self: center;
 
   display: flex;
   flex-direction: column;
+
+  max-width: 600px;
+  
 }
 
 legend {
@@ -269,9 +273,6 @@ legend {
 
 input, textarea {
   min-width: 500px;
-  max-width: 500px;
-  min-height: 50px;
-  padding: var(--def-input-padding);
 }
 
 input, label {
@@ -300,8 +301,6 @@ textarea {
   background-color: var(--primary-color);
   min-height: 200px;
   overflow: hidden;
-
-  position: relative;
 }
 
 .buttons {
