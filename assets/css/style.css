@@ -98,6 +98,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom; */
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
   position: sticky;
   top: 5px;
 }
@@ -155,7 +157,7 @@ main {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  /* background-color: var(--bg-banner-color); */
+  background-color: var(--secondary-color);
   border: 2px solid;
 
 }
@@ -237,6 +239,7 @@ article p::first-letter,
 #footer {
   justify-content: space-between;
   align-items: center;
+  background-color: var(--secondary-color);
 }
 
 .address {
