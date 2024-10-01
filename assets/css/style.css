@@ -357,8 +357,28 @@ textarea:focus {
   content: "OPTIONAL";
 }
 
-/*  */
 a:hover,
 button:hover {
   background-color: var(--hover-color);
+}
+
+/* services */
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.service-item-imgtext {
+  display: flex;
+  gap: var(--def-hor-margin);
+}
+
+.services h2 {
+  margin: 0;
 }
