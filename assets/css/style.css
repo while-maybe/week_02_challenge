@@ -193,6 +193,7 @@ main {
 
 h2 {
   margin: var(--def-vert-margin);
+  text-align: center;
 }
 
 #news {
@@ -210,7 +211,6 @@ h2 {
 }
 
 .news-item {
-  /* border: 2px solid black; */
   min-width: 200px;
   max-width: 350px;
 }
@@ -264,6 +264,7 @@ form {
   
 }
 
+
 legend {
   margin: auto;
 }
@@ -275,6 +276,7 @@ textarea {
 }
 
 input,
+textarea,
 label {
   font-size: var(--def-a-text-size);
   margin: 0 0 var(--def-vert-margin) 0;
@@ -322,6 +324,14 @@ input:focus,
 select:focus,
 textarea:focus {
   background-color: white;
+}
+
+#email:invalid {
+  border: 3px solid #F7717D;
+}
+
+input:valid {
+  border: 3px solid #37c145;
 }
 
 .required::after,
